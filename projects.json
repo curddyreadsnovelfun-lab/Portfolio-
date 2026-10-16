@@ -9,9 +9,9 @@
     "image": ""
   },
   {
-    "title": "Video Trimmer",
-    "url": "https://curddyreadsnovelfun-lab.github.io/Video-triming-and-compressing/",
-    "description": "Cut a clip, lower its resolution, and save a smaller file. Everything runs in your browser.",
+    "title": "Study time",
+    "url": "https://curddyreadsnovelfun-lab.github.io/Studytime/",
+    "description": "Paste a quiz in the format below and turn it into a practice test.",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "status": "Demo",
     "category": "Web Application",

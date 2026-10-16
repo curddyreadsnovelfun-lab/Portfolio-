@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curddy Jeric M. Estrada | Freelance Web Developer</title>
+<meta name="description" content="Portfolio of Curddy Jeric M. Estrada, a self-taught freelance web developer from the Philippines.">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="#home">Curddy J. Estrada</a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark mode"><span aria-hidden="true">☾</span></button>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><span aria-hidden="true">☰</span></button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Curddy Jeric M. Estrada</h1>
+      <p class="role">Freelance Web Developer</p>
+      <p class="headline">Self-taught developer building clean, practical websites and web apps.</p>
+      <p class="lead">I'm an aspiring web developer looking to expand my knowledge and projects. I'm learning by building real projects, and each one makes my work better.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projects">View My Projects</a>
+        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+      </div>
+      <p class="availability"><span class="dot" aria-hidden="true"></span>Available for commissions</p>
+    </div>
+  </section>
+
+  <section id="about" class="section alt">
+    <div class="container about">
+      <h2>About</h2>
+      <p>I'm a self-taught developer who enjoys building websites, exploring programming, and turning ideas into practical projects. I'm confident handling the three main languages of website creation, from HTML to JavaScript, while also dabbling in Python and Ruby.</p>
+      <p>My work covers responsive web design, UI design, debugging, and website development. I keep improving through personal projects, and I like solving practical problems along the way.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Git and GitHub</li>
+        <li>Responsive Web Design</li>
+        <li>UI Design</li>
+        <li>Debugging</li>
+        <li>Website Development</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="section-intro">Personal projects I've built. Hover over a card or use its Details button to read more.</p>
+      <div class="toolbar">
+        <label class="visually-hidden" for="searchInput">Search projects</label>
+        <input id="searchInput" type="search" placeholder="Search by title, technology, or category" autocomplete="off">
+        <button class="btn btn-secondary" id="resetBtn" type="button">Reset</button>
+      </div>
+      <div class="filters" id="categoryFilters" role="group" aria-label="Filter projects by category"></div>
+      <p class="status-msg" id="projectStatus" role="status"></p>
+      <div class="grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>Have a website or project in mind? I'm available for commissions, so send me a message.</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:curddyjericestrada@gmail.com">curddyjericestrada@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/curddyreadsnovelfun-lab" target="_blank" rel="noopener noreferrer">github.com/curddyreadsnovelfun-lab</a></li>
+        </ul>
+      </div>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" autocomplete="name" required aria-describedby="nameError">
+          <p class="error" id="nameError"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" type="email" autocomplete="email" required aria-describedby="emailError">
+          <p class="error" id="emailError"></p>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" maxlength="1000" required aria-describedby="messageError"></textarea>
+          <p class="error" id="messageError"></p>
+        </div>
+        <button class="btn btn-primary" type="submit">Open email draft</button>
+        <p class="form-note">This form doesn't send anything itself. It opens a draft in your email app, and you need to press send there. Your email app must be set up to send mail. If nothing opens, use the email link instead.</p>
+        <p class="form-note" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>Curddy Jeric M. Estrada</strong>
+      <p>Freelance web developer building websites and practical web projects.</p>
+    </div>
+    <div>
+      <p><a href="https://github.com/curddyreadsnovelfun-lab" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+      <p><a href="mailto:curddyjericestrada@gmail.com">Email</a></p>
+      <p>&copy; <span id="year"></span> Curddy Jeric M. Estrada</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

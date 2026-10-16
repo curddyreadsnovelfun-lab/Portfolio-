@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Video Trimmer",
+    "url": "https://curddyreadsnovelfun-lab.github.io/Video-triming-and-compressing/",
+    "description": "Cut a clip, lower its resolution, and save a smaller file. Everything runs in your browser.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "status": "Demo",
+    "category": "Web Application",
+    "image": ""
+  }
+]
